@@ -266,7 +266,6 @@ class DB
 
     public function num_fields( $query )
     {
-        self::$counter++;
         $query = $this->link->query( $query );
         $fields = $query->field_count;
         return $fields;
